@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16U484) Path("D:/Quartus_proyectos/Microproyecto2/output_files/") File("Microproyecto2.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16U484) Path("C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/output_files/") File("Microproyecto2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

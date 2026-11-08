@@ -1,8 +1,6 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 use work.pkg_system.all;
 
 entity Microproyecto2 is
@@ -18,31 +16,36 @@ entity Microproyecto2 is
         HEX2 : out std_logic_vector(6 downto 0);
         HEX3 : out std_logic_vector(6 downto 0)
     );
-end entity;
+end entity Microproyecto2;
+
 
 architecture rtl of Microproyecto2 is
 
+    -- Señales del controlador PIR
     signal pir_pulse_s : std_logic;
 
-    -- Señales temporales para probar sin el sensor
-    signal pir_prueba : std_logic := '0';
-    signal contador_prueba : integer range 0 to 49999999 := 0;
-
-    signal rom_addr_s : addr_t;
-    signal ram_addr_s : addr_t;
-
-    signal ram_addr_display_s : addr_t;
-
-    signal rom_data_s : data_t;
-    signal ram_data_s : data_t;
-
+    -- Señales de la unidad de control
+    signal rom_addr_s  : addr_t;
+    signal ram_addr_s  : addr_t;
     signal ram_wr_en_s : std_logic;
     signal ram_rd_en_s : std_logic;
 
+    -- Señales de la memoria ROM
+    signal rom_data_s : data_t;
+
+    -- Señales de la memoria RAM
+    signal ram_data_s : data_t;
+
+    -- Registros para la visualización
+    signal ram_addr_display_s : addr_t := (others => '0');
+    signal ram_data_display_s : data_t := (others => '0');
+
+    signal ram_rd_en_d : std_logic := '0';
     signal data_valid_s : std_logic := '0';
 
-    -- Decodificador hexadecimal a 7 segmentos
-    function decodificar(
+
+    -- Decodificador para displays de siete segmentos
+    function decodificar (
         dato : std_logic_vector(3 downto 0)
     ) return std_logic_vector is
     begin
@@ -69,29 +72,10 @@ architecture rtl of Microproyecto2 is
 
 begin
 
-    -- Generador temporal de pulsos para probar el sistema
-    process(CLOCK_50, rst)
-    begin
-        if rst = '0' then
-            contador_prueba <= 0;
-            pir_prueba <= '0';
+    ------------------------------------------------
+    -- 1. CONTROLADOR DEL SENSOR PIR
+    ------------------------------------------------
 
-        elsif rising_edge(CLOCK_50) then
-            if contador_prueba = 49999999 then
-                contador_prueba <= 0;
-                pir_prueba <= '1';
-
-            elsif contador_prueba = 1 then
-                pir_prueba <= '0';
-                contador_prueba <= contador_prueba + 1;
-
-            else
-                contador_prueba <= contador_prueba + 1;
-            end if;
-        end if;
-    end process;
-
-    -- Controlador del sensor PIR
     u_pir : entity work.pir_controller
         port map (
             clk       => CLOCK_50,
@@ -101,21 +85,27 @@ begin
             pir_pulse => pir_pulse_s
         );
 
-    -- Unidad de control
+
+    ------------------------------------------------
+    -- 2. UNIDAD DE CONTROL (FSM)
+    ------------------------------------------------
+
     u_control : entity work.control_unit
         port map (
             clk       => CLOCK_50,
             rst       => rst,
-            pir_pulse => pir_prueba,
-
+            pir_pulse => pir_pulse_s,
             rom_addr  => rom_addr_s,
             ram_addr  => ram_addr_s,
-
             ram_wr_en => ram_wr_en_s,
             ram_rd_en => ram_rd_en_s
         );
 
-    -- Memoria ROM
+
+    ------------------------------------------------
+    -- 3. MEMORIA ROM
+    ------------------------------------------------
+
     u_rom : entity work.rom_memory
         generic map (
             DATA_WIDTH => DATA_WIDTH,
@@ -127,53 +117,93 @@ begin
             data_out => rom_data_s
         );
 
-    -- Memoria RAM
+
+    ------------------------------------------------
+    -- 4. MEMORIA RAM
+    ------------------------------------------------
+
     u_ram : entity work.ram_memory
         generic map (
             DATA_WIDTH => DATA_WIDTH,
             ADDR_WIDTH => ADDR_WIDTH,
-            RDW_MODE  => "READ_FIRST"
+            RDW_MODE   => "READ_FIRST"
         )
         port map (
             clk      => CLOCK_50,
-            rd_en    => ram_rd_en_s,
-            wr_en    => ram_wr_en_s,
             addr     => ram_addr_s,
             data_in  => rom_data_s,
-            data_out => ram_data_s
+            data_out => ram_data_s,
+            wr_en    => ram_wr_en_s,
+            rd_en    => ram_rd_en_s
         );
 
-    -- Registro de la dirección que se acaba de leer
+
+    ------------------------------------------------
+    -- 5. REGISTROS PARA VISUALIZAR LOS DATOS
+    ------------------------------------------------
+
     process(CLOCK_50, rst)
     begin
         if rst = '0' then
+
             ram_addr_display_s <= (others => '0');
+            ram_data_display_s <= (others => '0');
+
+            ram_rd_en_d <= '0';
             data_valid_s <= '0';
 
         elsif rising_edge(CLOCK_50) then
+
+            -- Registrar que se realizó una lectura de RAM
+            ram_rd_en_d <= ram_rd_en_s;
+
+            -- Guardar la dirección correspondiente a la lectura
             if ram_rd_en_s = '1' then
                 ram_addr_display_s <= ram_addr_s;
+            end if;
+
+            -- Capturar el dato después de la lectura síncrona
+            if ram_rd_en_d = '1' then
+                ram_data_display_s <= ram_data_s;
                 data_valid_s <= '1';
             end if;
+
         end if;
     end process;
 
-    -- Visualización de RAM en hexadecimal
-    process(data_valid_s, ram_data_s, ram_addr_display_s)
+
+    ------------------------------------------------
+    -- 6. VISUALIZACIÓN EN LOS DISPLAYS
+    ------------------------------------------------
+
+    process(ram_addr_display_s, ram_data_display_s, data_valid_s)
     begin
-        -- Estado inicial: mostrar 0000
-        HEX0 <= "1000000";
-        HEX1 <= "1000000";
-        HEX2 <= "1000000";
-        HEX3 <= "1000000";
 
-        -- Cuando ya hay un dato leído de la RAM
-        if data_valid_s = '1' then
-            HEX0 <= decodificar(ram_data_s(3 downto 0));
-            HEX1 <= decodificar(ram_data_s(7 downto 4));
-            HEX2 <= decodificar("00" & ram_data_s(9 downto 8));
-            HEX3 <= decodificar(ram_addr_display_s);
+        if data_valid_s = '0' then
+
+            HEX3 <= decodificar("0000");
+            HEX2 <= decodificar("0000");
+            HEX1 <= decodificar("0000");
+            HEX0 <= decodificar("0000");
+
+        else
+
+            -- HEX3: dirección de la RAM
+            HEX3 <= decodificar(ram_addr_display_s(3 downto 0));
+
+            -- HEX2: parte alta del dato
+            HEX2 <= decodificar(
+                std_logic_vector(resize(unsigned(ram_data_display_s(9 downto 8)), 4))
+            );
+
+            -- HEX1: parte intermedia del dato
+            HEX1 <= decodificar(ram_data_display_s(7 downto 4));
+
+            -- HEX0: parte baja del dato
+            HEX0 <= decodificar(ram_data_display_s(3 downto 0));
+
         end if;
+
     end process;
 
-end architecture;
+end architecture rtl;
