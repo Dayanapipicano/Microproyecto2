@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Microproyecto2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Microproyecto2|ram_memory:u_ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_36k1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

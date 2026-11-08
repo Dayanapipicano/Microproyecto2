@@ -1,0 +1,7 @@
+
+State Machine - |Microproyecto2|control_unit:u_control|state_reg
+Name state_reg.READ_RAM state_reg.WRITE_RAM state_reg.READ_ROM state_reg.IDLE 
+state_reg.IDLE 0 0 0 0 
+state_reg.READ_ROM 0 0 1 1 
+state_reg.WRITE_RAM 0 1 0 1 
+state_reg.READ_RAM 1 0 0 1 
