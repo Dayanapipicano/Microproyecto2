@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Microproyecto2
-Sun Nov 08 17:17:22 2026
+Sun Nov 08 17:45:01 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -313,13 +313,13 @@ No paths to report.
 ; 0.334 ; rom_memory:u_rom|q_reg[0]                  ; ram_memory:u_ram|altsyncram:mem_rtl_0|altsyncram_36k1:auto_generated|ram_block1a0~porta_datain_reg0  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.384      ; 0.905      ;
 ; 0.351 ; control_unit:u_control|ram_addr_reg[1]     ; ram_memory:u_ram|altsyncram:mem_rtl_0|altsyncram_36k1:auto_generated|ram_block1a0~porta_address_reg0 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.377      ; 0.915      ;
 ; 0.354 ; control_unit:u_control|ram_addr_reg[2]     ; ram_memory:u_ram|altsyncram:mem_rtl_0|altsyncram_36k1:auto_generated|ram_block1a0~porta_address_reg0 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.377      ; 0.918      ;
-; 0.359 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.IDLE                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|rom_addr_reg[3]     ; control_unit:u_control|rom_addr_reg[3]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|rom_addr_reg[2]     ; control_unit:u_control|rom_addr_reg[2]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|rom_addr_reg[1]     ; control_unit:u_control|rom_addr_reg[1]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|rom_addr_reg[0]     ; control_unit:u_control|rom_addr_reg[0]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|ram_addr_reg[3]     ; control_unit:u_control|ram_addr_reg[3]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.359 ; control_unit:u_control|ram_addr_reg[2]     ; control_unit:u_control|ram_addr_reg[2]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
+; 0.359 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.IDLE                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.577      ;
 ; 0.362 ; control_unit:u_control|ram_addr_reg[0]     ; control_unit:u_control|ram_addr_reg[0]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.580      ;
 ; 0.372 ; control_unit:u_control|rom_addr_reg[3]     ; rom_memory:u_rom|q_reg[3]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.590      ;
 ; 0.373 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.READ_ROM                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 0.591      ;
@@ -388,10 +388,10 @@ No paths to report.
 ; 0.898 ; control_unit:u_control|ram_addr_reg[0]     ; ram_memory:u_ram|mem_rtl_0_bypass[6]                                                                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.116      ;
 ; 0.906 ; control_unit:u_control|ram_addr_reg[0]     ; control_unit:u_control|ram_addr_reg[1]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.124      ;
 ; 0.906 ; control_unit:u_control|ram_addr_reg[0]     ; ram_memory:u_ram|mem_rtl_0_bypass[4]                                                                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.124      ;
+; 0.915 ; ram_memory:u_ram|mem_rtl_0_bypass[14]      ; ram_memory:u_ram|q_reg[5]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.063      ; 1.135      ;
 ; 0.915 ; ram_rd_en_d                                ; ram_data_display_s[9]                                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.133      ;
 ; 0.915 ; ram_rd_en_d                                ; ram_data_display_s[8]                                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.133      ;
 ; 0.915 ; ram_rd_en_d                                ; data_valid_s                                                                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.061      ; 1.133      ;
-; 0.915 ; ram_memory:u_ram|mem_rtl_0_bypass[14]      ; ram_memory:u_ram|q_reg[5]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.063      ; 1.135      ;
 ; 0.941 ; ram_memory:u_ram|mem_rtl_0_bypass[15]      ; ram_memory:u_ram|q_reg[6]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.063      ; 1.161      ;
 ; 0.943 ; control_unit:u_control|state_reg.WRITE_RAM ; ram_memory:u_ram|mem_rtl_0_bypass[0]                                                                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.064      ; 1.164      ;
 ; 0.959 ; ram_memory:u_ram|mem~16                    ; ram_memory:u_ram|q_reg[0]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.062      ; 1.178      ;
@@ -1291,14 +1291,14 @@ No paths to report.
 ; 0.176 ; control_unit:u_control|ram_addr_reg[1]     ; ram_memory:u_ram|altsyncram:mem_rtl_0|altsyncram_36k1:auto_generated|ram_block1a0~porta_address_reg0 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.218      ; 0.498      ;
 ; 0.187 ; control_unit:u_control|ram_addr_reg[3]     ; control_unit:u_control|ram_addr_reg[3]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; control_unit:u_control|ram_addr_reg[2]     ; control_unit:u_control|ram_addr_reg[2]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.307      ;
+; 0.188 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.IDLE                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
 ; 0.188 ; control_unit:u_control|rom_addr_reg[3]     ; control_unit:u_control|rom_addr_reg[3]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
 ; 0.188 ; control_unit:u_control|rom_addr_reg[2]     ; control_unit:u_control|rom_addr_reg[2]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
 ; 0.188 ; control_unit:u_control|rom_addr_reg[1]     ; control_unit:u_control|rom_addr_reg[1]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
 ; 0.188 ; control_unit:u_control|rom_addr_reg[0]     ; control_unit:u_control|rom_addr_reg[0]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
-; 0.188 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.IDLE                                                                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.307      ;
 ; 0.194 ; control_unit:u_control|ram_addr_reg[0]     ; control_unit:u_control|ram_addr_reg[0]                                                               ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.314      ;
-; 0.198 ; control_unit:u_control|rom_addr_reg[3]     ; rom_memory:u_rom|q_reg[3]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.317      ;
 ; 0.198 ; pir_controller:u_pir|pir_sync2             ; pir_controller:u_pir|pir_pulse                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.317      ;
+; 0.198 ; control_unit:u_control|rom_addr_reg[3]     ; rom_memory:u_rom|q_reg[3]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.317      ;
 ; 0.199 ; control_unit:u_control|state_reg.IDLE      ; control_unit:u_control|state_reg.READ_ROM                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.318      ;
 ; 0.201 ; pir_controller:u_pir|pir_sync2             ; pir_controller:u_pir|pir_prev                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.320      ;
 ; 0.221 ; control_unit:u_control|ram_addr_reg[1]     ; ram_memory:u_ram|mem_rtl_0_bypass[3]                                                                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.341      ;
@@ -1311,8 +1311,8 @@ No paths to report.
 ; 0.255 ; pir_controller:u_pir|pir_prev              ; pir_controller:u_pir|pir_pulse                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.374      ;
 ; 0.262 ; ram_memory:u_ram|mem~18                    ; ram_memory:u_ram|q_reg[2]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.381      ;
 ; 0.265 ; ram_memory:u_ram|mem~17                    ; ram_memory:u_ram|q_reg[1]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.384      ;
-; 0.267 ; ram_memory:u_ram|mem_rtl_0_bypass[11]      ; ram_memory:u_ram|q_reg[2]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.386      ;
 ; 0.267 ; pir_controller:u_pir|pir_sync1             ; pir_controller:u_pir|pir_sync2                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.386      ;
+; 0.267 ; ram_memory:u_ram|mem_rtl_0_bypass[11]      ; ram_memory:u_ram|q_reg[2]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.386      ;
 ; 0.268 ; ram_memory:u_ram|mem_rtl_0_bypass[12]      ; ram_memory:u_ram|q_reg[3]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.387      ;
 ; 0.268 ; ram_memory:u_ram|mem_rtl_0_bypass[10]      ; ram_memory:u_ram|q_reg[1]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.387      ;
 ; 0.268 ; ram_memory:u_ram|mem_rtl_0_bypass[9]       ; ram_memory:u_ram|q_reg[0]                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.035      ; 0.387      ;
@@ -1921,7 +1921,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Nov 08 17:17:21 2026
+    Info: Processing started: Sun Nov 08 17:44:59 2026
 Info: Command: quartus_sta Microproyecto2 -c Microproyecto2
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored assignments for entity "DE0_Default" -- entity does not exist in design
@@ -2070,9 +2070,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 4695 megabytes
-    Info: Processing ended: Sun Nov 08 17:17:22 2026
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Sun Nov 08 17:45:01 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

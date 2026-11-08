@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "11/08/2026 17:17:23"
+-- DATE "11/08/2026 17:45:02"
 
 -- 
 -- Device: Altera EP3C16U484C6 Package UFBGA484
@@ -38,11 +38,11 @@ ENTITY 	Microproyecto2 IS
 	CLOCK_50 : IN std_logic;
 	rst : IN std_logic;
 	pir_in : IN std_logic;
-	LED_TEST : OUT std_logic;
-	HEX0 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX1 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX2 : OUT std_logic_vector(6 DOWNTO 0);
-	HEX3 : OUT std_logic_vector(6 DOWNTO 0)
+	LED_TEST : BUFFER std_logic;
+	HEX0 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX1 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX2 : BUFFER std_logic_vector(6 DOWNTO 0);
+	HEX3 : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END Microproyecto2;
 
