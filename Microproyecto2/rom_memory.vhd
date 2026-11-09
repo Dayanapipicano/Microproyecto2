@@ -6,7 +6,7 @@ use work.pkg_system.all;
 entity rom_memory is
 
     generic (
-        DATA_WIDTH : positive := 8;
+        DATA_WIDTH : positive := 10;
         ADDR_WIDTH : positive := 4
     );
 
