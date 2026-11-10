@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 entity ram_memory is
 
     generic (
-        DATA_WIDTH : positive := 8;
+        DATA_WIDTH : positive := 10;
         ADDR_WIDTH : positive := 4;
         RDW_MODE   : string := "READ_FIRST"
     );
