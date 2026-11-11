@@ -1,0 +1,30 @@
+C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/pkg_system.vhd {1 {vcom -work work -2002 -explicit C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/pkg_system.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package pkg_system
+-- Compiling package body pkg_system
+-- Loading package pkg_system
+
+} {} {}} C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/ram_memory/ram_memory.vhd {1 {vcom -work work -2002 -explicit C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/ram_memory/ram_memory.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_memory
+-- Compiling architecture rtl of ram_memory
+
+} {} {}} C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/ram_memory_tb/ram_memory_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/Microproyecto2/Microproyecto2/TestBench_RAM/ram_memory_tb/ram_memory_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_memory_tb
+-- Compiling architecture sim of ram_memory_tb
+-- Loading entity ram_memory
+
+} {} {}}

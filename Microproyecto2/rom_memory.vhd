@@ -5,11 +5,13 @@ use work.pkg_system.all;
 
 entity rom_memory is
 
+    -- Aca dejamos estos genéricos por si en algun momento nos toca cambiar el tamaño del bus de datos o de las direcciones
     generic (
         DATA_WIDTH : positive := 10;
         ADDR_WIDTH : positive := 4
     );
 
+    -- Los pines que conectamos: el reloj del sistema, la dirección que entra para buscar y el dato que sale
     port (
         clk      : in  std_logic;
         addr     : in  std_logic_vector(ADDR_WIDTH-1 downto 0);
@@ -18,22 +20,15 @@ entity rom_memory is
 
 end entity;
 
-
-
 architecture rtl of rom_memory is
 
-    -- Definicion de la memoria ROM
-
+    -- Aca armamos el tipo de dato para la tabla, o sea, una matriz que tiene tantas casillas como indique pues el ancho de la dirección
     type mem_array_t is array
     (0 to 2**ADDR_WIDTH-1)
     of std_logic_vector(DATA_WIDTH-1 downto 0);
 
-    -- Datos almacenados previamente
-	 --rom_type
-
-    
-	 
-	 constant mem : mem_array_t := (
+    -- En esta parte metimos los valores fijos que queríamos que la ROM tuviera guardados desde el principio como nos indico el profe (del 1000 al 1015)
+    constant mem : mem_array_t := (
         0  => std_logic_vector(to_unsigned(1000, DATA_WIDTH)),
         1  => std_logic_vector(to_unsigned(1001, DATA_WIDTH)),
         2  => std_logic_vector(to_unsigned(1002, DATA_WIDTH)),
@@ -52,33 +47,29 @@ architecture rtl of rom_memory is
         15 => std_logic_vector(to_unsigned(1015, DATA_WIDTH))
     );
 
-    -- Registro de salida
-
-	 signal q_reg  : std_logic_vector(DATA_WIDTH-1 downto 0);
+    -- Este cablecito lo usamos para guardar el dato antes de sacarlo, y la variable para pasar la dirección a número entero
+    signal q_reg  : std_logic_vector(DATA_WIDTH-1 downto 0);
     signal addr_i : integer range 0 to 2**ADDR_WIDTH-1;
 
+    -- Con esto le indicamos a Quartus que meta esta tabla en los bloques de memoria M9K de la tarjeta
     attribute romstyle : string;
     attribute romstyle of mem : constant is "M9K";
 
 begin
 
-
-
+    -- Aca pasamos la dirección que nos llega en binario a un número entero normalito para poder buscar en el arreglo de arriba
     addr_i <= to_integer(unsigned(addr));
 
-    -- Lectura sincronica
-
+    -- Este proceso lo armamos para leer la memoria sincronizados con el reloj
     process(clk)
     begin
-
+        -- Segun entendimos, cada vez que hay un flanco de subida en el reloj, buscamos el dato en la posicion y lo retenemos
         if rising_edge(clk) then
-
             q_reg <= mem(addr_i);
-
         end if;
-
     end process;
 
+    -- Y por ultimo mandamos el dato que quedó guardado en el registro hacia la salida del modulo
     data_out <= q_reg;
 
 end architecture;

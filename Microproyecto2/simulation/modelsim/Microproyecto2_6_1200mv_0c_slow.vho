@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "11/09/2026 08:42:54"
+-- DATE "11/10/2026 19:32:22"
 
 -- 
 -- Device: Altera EP3C16U484C6 Package UFBGA484
@@ -263,13 +263,13 @@ SIGNAL \Mux1~0_combout\ : std_logic;
 SIGNAL \Mux1~1_combout\ : std_logic;
 SIGNAL \Mux0~0_combout\ : std_logic;
 SIGNAL \Mux0~1_combout\ : std_logic;
-SIGNAL \u_control|ram_addr_reg\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL ram_data_display_s : std_logic_vector(9 DOWNTO 0);
-SIGNAL \u_control|rom_addr_reg\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \u_rom|q_reg\ : std_logic_vector(9 DOWNTO 0);
-SIGNAL ram_addr_display_s : std_logic_vector(3 DOWNTO 0);
-SIGNAL \u_ram|mem_rtl_0_bypass\ : std_logic_vector(0 TO 18);
 SIGNAL \u_ram|q_reg\ : std_logic_vector(9 DOWNTO 0);
+SIGNAL \u_ram|mem_rtl_0_bypass\ : std_logic_vector(0 TO 18);
+SIGNAL \u_control|rom_addr_reg\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL ram_addr_display_s : std_logic_vector(3 DOWNTO 0);
+SIGNAL \u_rom|q_reg\ : std_logic_vector(9 DOWNTO 0);
+SIGNAL ram_data_display_s : std_logic_vector(9 DOWNTO 0);
+SIGNAL \u_control|ram_addr_reg\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \u_control|ALT_INV_state_reg.READ_RAM~q\ : std_logic;
 SIGNAL \ALT_INV_HEX2~4_combout\ : std_logic;
 

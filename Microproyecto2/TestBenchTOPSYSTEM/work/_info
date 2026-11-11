@@ -1,0 +1,278 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\Microproyecto2\Microproyecto2\TestBench_ROM
+Econtrol_unit
+Z0 w1794184952
+Z1 DPx4 work 10 pkg_system 0 22 4bS7EbGHZcT1hT36Pj<Ai1
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\altera\Microproyecto2\Microproyecto2\TestBenchTOPSYSTEM
+Z6 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/control_unit.vhd
+Z7 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/control_unit.vhd
+l0
+L9
+VfYMB[a86ff;[_8NIXi=8Y2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1794279610.027000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/control_unit.vhd|
+Z11 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/control_unit.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 68<8?1PBXghj=UVJz4A9Q2
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+Z14 DEx4 work 12 control_unit 0 22 fYMB[a86ff;[_8NIXi=8Y2
+l33
+L23
+VSZJGcMGmB0MEi6FdM:hPI2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 DzBNDEEj@j5=oLhNE=Cn53
+!i10b 1
+Emicroproyecto2
+Z15 w1794184952
+R1
+R2
+R3
+R4
+R5
+Z16 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/top_system.vhd
+Z17 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/top_system.vhd
+l0
+L6
+VOAYKl2fSAe`=PmngB9BNE1
+R8
+32
+Z18 !s108 1794279610.131000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/top_system.vhd|
+Z20 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/top_system.vhd|
+R12
+R13
+!s100 6TLz=_<OOeo3>Z6nDVzoO1
+!i10b 1
+Artl
+Z21 DEx4 work 10 ram_memory 0 22 A5ohbDjZ]hj=3E5azzzlk1
+Z22 DEx4 work 10 rom_memory 0 22 HVL?Y?zCFKkJ[hHC2E=bQ2
+R14
+Z23 DEx4 work 14 pir_controller 0 22 10mYmHeVV:J7n05ZJeN@V1
+R1
+R2
+R3
+R4
+Z24 DEx4 work 14 microproyecto2 0 22 OAYKl2fSAe`=PmngB9BNE1
+l73
+L22
+VfH0VWWNF5Q0MVV@>g9<J;0
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!s100 dj4Rj?4k?0g6l4D`k>2=D0
+!i10b 1
+Epir_controller
+R15
+R2
+R3
+R4
+R5
+Z25 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pir_controller.vhd
+Z26 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pir_controller.vhd
+l0
+L6
+V10mYmHeVV:J7n05ZJeN@V1
+R8
+32
+Z27 !s108 1794279609.920000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pir_controller.vhd|
+Z29 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pir_controller.vhd|
+R12
+R13
+!s100 gD5G?MealPDWMRlAblmOJ3
+!i10b 1
+Artl
+R2
+R3
+R4
+R23
+l23
+L17
+VQVaWaG_GKYU0a[W;8dMKM1
+R8
+32
+R27
+R28
+R29
+R12
+R13
+!s100 VDH8Z^5eceP:MnL47C`;?0
+!i10b 1
+Ppkg_system
+R2
+R3
+R4
+R15
+R5
+Z30 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pkg_system.vhd
+Z31 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pkg_system.vhd
+l0
+L5
+V4bS7EbGHZcT1hT36Pj<Ai1
+R8
+32
+Z32 !s108 1794279609.571000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pkg_system.vhd|
+Z34 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/pkg_system.vhd|
+R12
+R13
+!s100 7Wf4GP8HSQ=gJHh?8cSh90
+!i10b 1
+Bbody
+R1
+R2
+R3
+R4
+l0
+L23
+VnU`imj[C2HI[0j>=GWUVD2
+R8
+32
+R32
+R33
+R34
+R12
+R13
+nbody
+!s100 JSEHUVe7E0Y2A`LHk[4A]2
+!i10b 1
+Eram_memory
+Z35 w1794275630
+R2
+R3
+R4
+R5
+Z36 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/ram_memory.vhd
+Z37 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/ram_memory.vhd
+l0
+L7
+VA5ohbDjZ]hj=3E5azzzlk1
+R8
+32
+Z38 !s108 1794279609.804000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/ram_memory.vhd|
+Z40 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/ram_memory.vhd|
+R12
+R13
+!s100 ]z7k;JLQ_haR=BXm_dMQ42
+!i10b 1
+Artl
+R2
+R3
+R4
+R21
+l53
+L30
+V26LkQCh>[5W9FaKlW`FeY2
+R8
+32
+R38
+R39
+R40
+R12
+R13
+!s100 FlYHX2ol<dX=nE4=ANY`42
+!i10b 1
+Erom_memory
+R35
+R1
+R2
+R3
+R4
+R5
+Z41 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/rom_memory.vhd
+Z42 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/rom_memory.vhd
+l0
+L6
+VHVL?Y?zCFKkJ[hHC2E=bQ2
+R8
+32
+Z43 !s108 1794279609.689000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/rom_memory.vhd|
+Z45 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/rom_memory.vhd|
+R12
+R13
+!s100 N<aMN>kDoaP:5G9bii10=0
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+R22
+l63
+L23
+V`MWWVdL^[<?U5WU3jf9O:2
+R8
+32
+R43
+R44
+R45
+R12
+R13
+!s100 MkSS>0YKPCO?AFl::7jmV0
+!i10b 1
+Etb_top_system
+Z46 w1794279696
+R1
+R2
+R3
+R4
+R5
+Z47 8C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/tb_top_system.vhd
+Z48 FC:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/tb_top_system.vhd
+l0
+L6
+VzYX4@=j[UzJ9d7JdRZ5`]0
+!s100 1z^K:SgI=k<SbmEL[=:W02
+R8
+32
+!i10b 1
+Z49 !s108 1794279808.924000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/tb_top_system.vhd|
+Z51 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchTOPSYSTEM/tb_top_system.vhd|
+R12
+R13
+Asim
+R24
+R1
+R2
+R3
+R4
+DEx4 work 13 tb_top_system 0 22 zYX4@=j[UzJ9d7JdRZ5`]0
+l26
+L9
+Ve2d1j_`P?f=7UPjK[I<l62
+!s100 1cOTL;a0ZWQk5`:CBn[M31
+R8
+32
+!i10b 1
+R49
+R50
+R51
+R12
+R13
