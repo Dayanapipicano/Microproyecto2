@@ -1,0 +1,118 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\Microproyecto2\Microproyecto2\TestBenchTOPSYSTEM
+Epir_controller
+Z0 w1794360791
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\Microproyecto2\Microproyecto2\TestBench_pircontroller\tbpirWAVE
+Z5 8pir_controller.vhd
+Z6 Fpir_controller.vhd
+l0
+L6
+VVmKbT[334DBmIDG]:YZUz1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1794405878.814000
+Z9 !s90 -reportprogress|300|-93|pir_controller.vhd|
+Z10 !s107 pir_controller.vhd|
+Z11 o-93 -O0
+Z12 tExplicit 1
+!s100 lX2]HN[T]E8f`:RHPZ_a]1
+!i10b 1
+Artl
+R1
+R2
+R3
+Z13 DEx4 work 14 pir_controller 0 22 VmKbT[334DBmIDG]:YZUz1
+l24
+L18
+Vl_5BR5?RAED06]Tea8]0D0
+!s100 A`YF2n0A^bmYS0l>YUCPF2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Epir_controller_tb
+Z14 w1794405648
+R1
+R2
+R3
+R4
+Z15 8pir_controller_tb.vhd
+Z16 Fpir_controller_tb.vhd
+l0
+L6
+VnhQlKX3IZ1V^TziQD1=F<2
+!s100 jlakZz[l<zTz88z3CemUg3
+R7
+31
+!i10b 1
+Z17 !s108 1794405878.910000
+Z18 !s90 -reportprogress|300|-93|pir_controller_tb.vhd|
+Z19 !s107 pir_controller_tb.vhd|
+R11
+R12
+Asim
+R13
+R1
+R2
+R3
+DEx4 work 17 pir_controller_tb 0 22 nhQlKX3IZ1V^TziQD1=F<2
+l21
+L9
+VIe>_@]Doh5;:`NU;NQ_jF3
+Z20 !s100 DiHcGJna_=;a@K29NjGR_2
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12
+Ppkg_system
+R1
+R2
+R3
+Z21 w1794359207
+R4
+Z22 8pkg_system.vhd
+Z23 Fpkg_system.vhd
+l0
+L6
+Ve>_7nPTLV5HQd8d85BT]90
+R7
+31
+Z24 !s108 1794405878.695000
+Z25 !s90 -reportprogress|300|-93|pkg_system.vhd|
+Z26 !s107 pkg_system.vhd|
+R11
+R12
+!s100 z=nffVAHU2PDXNIi^^04b0
+!i10b 1
+Bbody
+DPx4 work 10 pkg_system 0 22 e>_7nPTLV5HQd8d85BT]90
+R1
+R2
+R3
+l0
+L36
+V558f2<:d3bVJD1<bj]ikR2
+R7
+31
+R24
+R25
+R26
+R11
+R12
+nbody
+!s100 GELBg[kA^7IIneSlT_QKi2
+!i10b 1
