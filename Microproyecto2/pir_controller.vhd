@@ -16,6 +16,8 @@ end entity;
 
 architecture rtl of pir_controller is
 
+
+    --Recibe la señal y la estabiliza
     signal pir_sync1 : std_logic;
     signal pir_sync2 : std_logic;
     signal pir_prev  : std_logic;

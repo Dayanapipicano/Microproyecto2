@@ -5,7 +5,6 @@ source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/r
 source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/pir_controller.vhd
 source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/control_unit.vhd
 source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/top_system.vhd
-source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/tb_top_system.vhd
 source_file = 1, C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/db/Microproyecto2.cbx.xml
 source_file = 1, d:/quartus_proyectos/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, d:/quartus_proyectos/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

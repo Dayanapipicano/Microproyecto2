@@ -9,7 +9,10 @@ architecture sim of tb_top_system is
 
     signal CLOCK_50 : std_logic := '0';
     signal rst      : std_logic := '0';
-    signal pir_in   : std_logic := '0';
+    --signal pir_in   : std_logic := '0';
+	 signal SW0   : std_logic := '0';
+	 
+	 
 
     --signal LEDR : std_logic_vector(7 downto 0);
 
@@ -20,7 +23,9 @@ begin
         port map (
             CLOCK_50 => CLOCK_50,
             rst      => rst,
-            pir_in   => pir_in
+            --pir_in   => pir_in
+				SW0      => SW0
+				
             --LEDR     => LEDR
         );
 

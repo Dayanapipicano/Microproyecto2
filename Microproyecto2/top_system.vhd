@@ -10,6 +10,7 @@ entity Microproyecto2 is
         pir_in   : in  std_logic;
 
         LED_TEST : out std_logic;
+		  --SW0 : in std_logic;
 
         HEX0 : out std_logic_vector(6 downto 0);
         HEX1 : out std_logic_vector(6 downto 0);
@@ -72,23 +73,26 @@ architecture rtl of Microproyecto2 is
 
 begin
 
-    ------------------------------------------------
-    -- 1. CONTROLADOR DEL SENSOR PIR
-    ------------------------------------------------
+   
+    -- CONTROLADOR DEL SENSOR PIR
+   
 
-    u_pir : entity work.pir_controller
-        port map (
-            clk       => CLOCK_50,
-            rst       => rst,
-            pir_in    => pir_in,
-            LED_TEST  => LED_TEST,
-            pir_pulse => pir_pulse_s
-        );
+  
+		  
+		  u_pir : entity work.pir_controller
+    port map (
+        clk       => CLOCK_50,
+        rst       => rst,
+        pir_in    =>pir_in ,
+		  --pir_in    => SW0,
+        LED_TEST  => LED_TEST,
+        pir_pulse => pir_pulse_s
+    );
 
 
-    ------------------------------------------------
-    -- 2. UNIDAD DE CONTROL (FSM)
-    ------------------------------------------------
+   
+    --  UNIDAD DE CONTROL (FSM)
+  
 
     u_control : entity work.control_unit
         port map (
@@ -102,9 +106,8 @@ begin
         );
 
 
-    ------------------------------------------------
-    -- 3. MEMORIA ROM
-    ------------------------------------------------
+    --  MEMORIA ROM
+
 
     u_rom : entity work.rom_memory
         generic map (
@@ -118,9 +121,9 @@ begin
         );
 
 
-    ------------------------------------------------
-    -- 4. MEMORIA RAM
-    ------------------------------------------------
+ 
+    --  MEMORIA RAM
+   
 
     u_ram : entity work.ram_memory
         generic map (
@@ -138,9 +141,9 @@ begin
         );
 
 
-    ------------------------------------------------
-    -- 5. REGISTROS PARA VISUALIZAR LOS DATOS
-    ------------------------------------------------
+  
+    --  REGISTROS PARA VISUALIZAR LOS DATOS
+   
 
     process(CLOCK_50, rst)
     begin
@@ -172,9 +175,9 @@ begin
     end process;
 
 
-    ------------------------------------------------
-    -- 6. VISUALIZACIÓN EN LOS DISPLAYS
-    ------------------------------------------------
+ 
+    --  VISUALIZACIÓN EN LOS DISPLAYS
+  
 
     process(ram_addr_display_s, ram_data_display_s, data_valid_s)
     begin

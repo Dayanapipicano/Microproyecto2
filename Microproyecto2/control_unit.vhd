@@ -22,6 +22,7 @@ end entity;
 
 architecture rtl of control_unit is
 
+    --Estados posibles
     type STATES is (IDLE, READ_ROM, WRITE_RAM, READ_RAM);
 
     signal state_reg : STATES;
