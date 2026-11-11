@@ -4,6 +4,8 @@ use ieee.numeric_std.all;
 use work.pkg_system.all;
 
 entity Microproyecto2 is
+
+-- Aquí definimos los pines físicos que van a la tarjeta: el reloj de 50MHz, el botón de reset, la entrada del sensor PIR, el LED de prueba y los 4 displays de 7 segmentos.
     port (
         CLOCK_50 : in  std_logic;
         rst      : in  std_logic;
@@ -21,22 +23,21 @@ end entity Microproyecto2;
 
 architecture rtl of Microproyecto2 is
 
-    -- Señales del controlador PIR
+    -- Aca pues estarian los cables internos para conectar todos los módulos entre sí
     signal pir_pulse_s : std_logic;
-
-    -- Señales de la unidad de control
+	 
+    -- Pues en esta parte estarian los cables de la unidad de control, como los permisos por asi decirlo
     signal rom_addr_s  : addr_t;
     signal ram_addr_s  : addr_t;
     signal ram_wr_en_s : std_logic;
     signal ram_rd_en_s : std_logic;
 
-    -- Señales de la memoria ROM
+    -- Estos seria los cables para los datos que salen de las memorias
     signal rom_data_s : data_t;
-
-    -- Señales de la memoria RAM
     signal ram_data_s : data_t;
-
-    -- Registros para la visualización
+	 
+	 
+    -- Variables para congelar y mostrar los datos en los displays sin que se muevan como locos
     signal ram_addr_display_s : addr_t := (others => '0');
     signal ram_data_display_s : data_t := (others => '0');
 
@@ -44,7 +45,7 @@ architecture rtl of Microproyecto2 is
     signal data_valid_s : std_logic := '0';
 
 
-    -- Decodificador para displays de siete segmentos
+    -- Una fuucioncita sencilla para convertir un número de 4 bits en los segmentos que prenden el display, es como un mini deco ahi
     function decodificar (
         dato : std_logic_vector(3 downto 0)
     ) return std_logic_vector is
@@ -72,9 +73,9 @@ architecture rtl of Microproyecto2 is
 
 begin
 
-    ------------------------------------------------
+   
     -- 1. CONTROLADOR DEL SENSOR PIR
-    ------------------------------------------------
+    
 
     u_pir : entity work.pir_controller
         port map (
@@ -86,9 +87,8 @@ begin
         );
 
 
-    ------------------------------------------------
     -- 2. UNIDAD DE CONTROL (FSM)
-    ------------------------------------------------
+   
 
     u_control : entity work.control_unit
         port map (
@@ -102,9 +102,9 @@ begin
         );
 
 
-    ------------------------------------------------
+    
     -- 3. MEMORIA ROM
-    ------------------------------------------------
+    
 
     u_rom : entity work.rom_memory
         generic map (
@@ -118,9 +118,9 @@ begin
         );
 
 
-    ------------------------------------------------
+  
     -- 4. MEMORIA RAM
-    ------------------------------------------------
+    
 
     u_ram : entity work.ram_memory
         generic map (
@@ -138,12 +138,13 @@ begin
         );
 
 
-    ------------------------------------------------
     -- 5. REGISTROS PARA VISUALIZAR LOS DATOS
-    ------------------------------------------------
+   
 
     process(CLOCK_50, rst)
     begin
+	 
+	 -- Si nos tiran un reset en cero, apagamos y dejamos todo en ceros limpio.
         if rst = '0' then
 
             ram_addr_display_s <= (others => '0');
@@ -154,15 +155,16 @@ begin
 
         elsif rising_edge(CLOCK_50) then
 
-            -- Registrar que se realizó una lectura de RAM
+            -- Aca se vendria a registrar que se realizó una lectura de RAM
             ram_rd_en_d <= ram_rd_en_s;
-
-            -- Guardar la dirección correspondiente a la lectura
+				
+				
+            -- Si la RAM se mandó a leer, guardamos de una la dirección exacta en la que estábamos.
             if ram_rd_en_s = '1' then
                 ram_addr_display_s <= ram_addr_s;
             end if;
 
-            -- Capturar el dato después de la lectura síncrona
+            -- Ya cuando pasa el ciclo de retardo, atrapamos el dato que sale de la RAM y prendemos la alarma o la señal de que pues este ya es válido.
             if ram_rd_en_d = '1' then
                 ram_data_display_s <= ram_data_s;
                 data_valid_s <= '1';
@@ -172,13 +174,14 @@ begin
     end process;
 
 
-    ------------------------------------------------
+  
     -- 6. VISUALIZACIÓN EN LOS DISPLAYS
-    ------------------------------------------------
+    
 
     process(ram_addr_display_s, ram_data_display_s, data_valid_s)
     begin
 
+	 -- Si todavía no hay datos válidos (al arrancar), apagamos los displays dejándolos en ceros para que no muestren basura.
         if data_valid_s = '0' then
 
             HEX3 <= decodificar("0000");
@@ -188,18 +191,18 @@ begin
 
         else
 
-            -- HEX3: dirección de la RAM
+            -- HEX3: Estico muestra en qué dirección de la RAM estamos parados leyendo.
             HEX3 <= decodificar(ram_addr_display_s(3 downto 0));
 
-            -- HEX2: parte alta del dato
+            -- HEX2: Muestra la partecita más alta del dato de la memoria.
             HEX2 <= decodificar(
                 std_logic_vector(resize(unsigned(ram_data_display_s(9 downto 8)), 4))
             );
 
-            -- HEX1: parte intermedia del dato
+            -- HEX1: Muestra los bits de la mitad del dato.
             HEX1 <= decodificar(ram_data_display_s(7 downto 4));
 
-            -- HEX0: parte baja del dato
+            -- HEX0: Muestra la parte baja del dato (los últimos bits).
             HEX0 <= decodificar(ram_data_display_s(3 downto 0));
 
         end if;
