@@ -181,7 +181,7 @@ begin
     process(ram_addr_display_s, ram_data_display_s, data_valid_s)
     begin
 
-	 -- Si todavía no hay datos válidos (al arrancar), apagamos los displays dejándolos en ceros para que no muestren basura.
+	 -- Si todavía no hay datos válidos cuando esta eaaranque como tal , apagamos los displays dejándolos en ceros para que no muestren basura.
         if data_valid_s = '0' then
 
             HEX3 <= decodificar("0000");

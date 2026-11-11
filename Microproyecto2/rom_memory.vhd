@@ -51,7 +51,7 @@ architecture rtl of rom_memory is
     signal q_reg  : std_logic_vector(DATA_WIDTH-1 downto 0);
     signal addr_i : integer range 0 to 2**ADDR_WIDTH-1;
 
-    -- Con esto le indicamos a Quartus que meta esta tabla en los bloques de memoria M9K de la tarjeta
+    -- Con esto le indicamos a Quartus que meta esta tabla en los bloques de memoria M9K de la tarjeta, con lo que investigamos obligamos a quartus a trabajar ya con las memorias internas de la fpga sino haria resto de flip flop y circuitos que no queremos
     attribute romstyle : string;
     attribute romstyle of mem : constant is "M9K";
 

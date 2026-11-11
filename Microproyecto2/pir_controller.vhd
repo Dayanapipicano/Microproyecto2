@@ -16,7 +16,7 @@ entity pir_controller is
 end entity;
 
 architecture rtl of pir_controller is
-
+-- Aca la explicacion en pocas palabras seria que los pyr sync 1 y 2 son dos flip flops en serie, el primero es como el que tanquea los errores y asume ese daño,ya que la señal que recibe el 1 es asincronica y como es del exterior puede ser caotica, y con el segundo ya se envia limpia esa señal ya sincronicamente
     signal pir_sync1 : std_logic;
     signal pir_sync2 : std_logic;
     signal pir_prev  : std_logic;

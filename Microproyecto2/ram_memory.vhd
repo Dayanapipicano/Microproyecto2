@@ -57,7 +57,7 @@ architecture rtl of ram_memory is
     signal q_reg : std_logic_vector(DATA_WIDTH-1 downto 0);
 	 
 
-   -- O sea, aca pasamos la dirección de binario a un número entero para no enredarnos buscando en la matriz
+   -- Aca  pues lo que se haria es pasar la dirección de binario a un número entero para no enredarnos buscando en la matriz
 
     signal addr_i : integer range 0 to 2**ADDR_WIDTH-1;
 	 
@@ -89,7 +89,7 @@ begin
 
                 mem(addr_i) <= data_in;
 					 
-	 -- Aquí elegimos si devolvemos de una el dato que acabamos de meter o el viejito que estaba pues antes
+	 -- Aquí elegimos si devolvemos de una el dato que acabamos de meter o el viejito que estaba antes
 
                 if RDW_MODE = "WRITE_FIRST" then
 

@@ -31,7 +31,7 @@ end package pkg_system;
 
 
 
--- Esta parte la dejamos vacia porque solo declaramos las cosas arriba y no habia funciones que programar adentro
+-- Esta parte la dejamos vacia porque solo declaramos las cosas arriba y no habia funciones que programar pues adentro
 
 package body pkg_system is
 

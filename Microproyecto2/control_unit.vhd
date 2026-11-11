@@ -69,7 +69,7 @@ begin
     end process;
 	 
 
--- Este proceso decide cómo saltamos de un estado a otro dependiendo de lo que pase.
+-- Este proceso decide cómo saltamos de un estado a otro dependiendo de lo que pase , aca mejor dicho esta en lo que se basa nuestra maquina de estados , como esta bien dividia si es bastante facil de entender.
 
     process(state_reg, pir_pulse)
     begin
