@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\Microproyecto2\Microproyecto2\TestBench_RAM
+Econtrol_unit
+Z0 w1794184952
+Z1 DPx4 work 10 pkg_system 0 22 4bS7EbGHZcT1hT36Pj<Ai1
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\altera\Microproyecto2\Microproyecto2\TestBenchFSM
+Z6 8C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit.vhd
+Z7 FC:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit.vhd
+l0
+L9
+VfYMB[a86ff;[_8NIXi=8Y2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1794276969.095000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit.vhd|
+Z11 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 68<8?1PBXghj=UVJz4A9Q2
+!i10b 1
+Artl
+R1
+R2
+R3
+R4
+Z14 DEx4 work 12 control_unit 0 22 fYMB[a86ff;[_8NIXi=8Y2
+l33
+L23
+VSZJGcMGmB0MEi6FdM:hPI2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 DzBNDEEj@j5=oLhNE=Cn53
+!i10b 1
+Econtrol_unit_tb
+Z15 w1794276876
+R1
+R2
+R3
+R4
+R5
+Z16 8C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit_tb/control_unit_tb.vhd
+Z17 FC:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit_tb/control_unit_tb.vhd
+l0
+L7
+VBB:b09W6NzK7<O06n:@Y72
+R8
+32
+Z18 !s108 1794276969.158000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit_tb/control_unit_tb.vhd|
+Z20 !s107 C:/altera/Microproyecto2/Microproyecto2/TestBenchFSM/control_unit_tb/control_unit_tb.vhd|
+R12
+R13
+!s100 VSzQ7h<J^41lfi=gf`NVk1
+!i10b 1
+Asim
+R14
+R1
+R2
+R3
+R4
+DEx4 work 15 control_unit_tb 0 22 BB:b09W6NzK7<O06n:@Y72
+l25
+L10
+V?Ro]=2EH<NOF9cVDecg[C0
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!s100 f^XP0>>CBmaB9SV@>o[ak1
+!i10b 1
+Ppkg_system
+R2
+R3
+R4
+Z21 w1794184952
+R5
+Z22 8pkg_system.vhd
+Z23 Fpkg_system.vhd
+l0
+L5
+VL@YST4<e6LHA<ZiII2?6c1
+!s100 7Wf4GP8HSQ=gJHh?8cSh90
+R8
+31
+!i10b 1
+Z24 !s108 1794277549.257000
+Z25 !s90 -reportprogress|300|-93|-work|work|pkg_system.vhd|
+Z26 !s107 pkg_system.vhd|
+Z27 o-93 -work work -O0
+R13
+Bbody
+DPx4 work 10 pkg_system 0 22 L@YST4<e6LHA<ZiII2?6c1
+R2
+R3
+R4
+l0
+L23
+VJFHfCnl9g;:VMCNPedz=23
+Z28 !s100 JSEHUVe7E0Y2A`LHk[4A]2
+R8
+31
+!i10b 1
+R24
+R25
+R26
+R27
+R13
+nbody

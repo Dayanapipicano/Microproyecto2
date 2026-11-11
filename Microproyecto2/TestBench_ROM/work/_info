@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\Microproyecto2\Microproyecto2\TestBench_ROM
+Ppkg_system
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 w1794184952
+Z5 dC:\altera\Microproyecto2\Microproyecto2\TestBench_ROM
+Z6 8C:/altera/Microproyecto2/Microproyecto2/pkg_system.vhd
+Z7 FC:/altera/Microproyecto2/Microproyecto2/pkg_system.vhd
+l0
+L5
+V4bS7EbGHZcT1hT36Pj<Ai1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1794278186.856000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/Microproyecto2/Microproyecto2/pkg_system.vhd|
+Z11 !s107 C:/altera/Microproyecto2/Microproyecto2/pkg_system.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 7Wf4GP8HSQ=gJHh?8cSh90
+!i10b 1
+Bbody
+Z14 DPx4 work 10 pkg_system 0 22 4bS7EbGHZcT1hT36Pj<Ai1
+R1
+R2
+R3
+l0
+L23
+VnU`imj[C2HI[0j>=GWUVD2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+nbody
+!s100 JSEHUVe7E0Y2A`LHk[4A]2
+!i10b 1
+Erom_memory
+Z15 w1794278414
+R14
+R1
+R2
+R3
+R5
+Z16 8rom_memory.vhd
+Z17 From_memory.vhd
+l0
+L6
+V?<[K8YaGTC04U_SQ1EWf82
+R8
+31
+Z18 !s108 1794278437.764000
+Z19 !s90 -reportprogress|300|-93|-work|work|rom_memory.vhd|
+Z20 !s107 rom_memory.vhd|
+Z21 o-93 -work work -O0
+R13
+!s100 N<aMN>kDoaP:5G9bii10=0
+!i10b 1
+Artl
+R14
+R1
+R2
+R3
+Z22 DEx4 work 10 rom_memory 0 22 ?<[K8YaGTC04U_SQ1EWf82
+l63
+L23
+VWMNkLGCkIRR]B<IhAM_IQ2
+!s100 MkSS>0YKPCO?AFl::7jmV0
+R8
+31
+R18
+R19
+R20
+R21
+R13
+!i10b 1
+Erom_memory_tb
+Z23 w1794188154
+R14
+R1
+R2
+R3
+R5
+Z24 8rom_memory_tb.vhd
+Z25 From_memory_tb.vhd
+l0
+L6
+V0nOFfB9VT`GWG5f@4ATWz3
+!s100 T4>a^?4i2D<i_WHmc[zK91
+R8
+31
+!i10b 1
+Z26 !s108 1794278437.872000
+Z27 !s90 -reportprogress|300|-93|-work|work|rom_memory_tb.vhd|
+Z28 !s107 rom_memory_tb.vhd|
+R21
+R13
+Asim
+R22
+R14
+R1
+R2
+R3
+Z29 DEx4 work 13 rom_memory_tb 0 22 0nOFfB9VT`GWG5f@4ATWz3
+l19
+L9
+Z30 VzFGg7IfGD=hCOM9g@Ug^j0
+Z31 !s100 8A@QO`RX^>lSVeHlmAOGH2
+R8
+31
+!i10b 1
+R26
+R27
+R28
+R21
+R13

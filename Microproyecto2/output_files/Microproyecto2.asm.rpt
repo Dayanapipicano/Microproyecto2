@@ -1,5 +1,5 @@
 Assembler report for Microproyecto2
-Sun Nov 08 20:49:52 2026
+Tue Nov 10 19:32:16 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof
+  5. Assembler Device Options: C:/altera/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Nov 08 20:49:52 2026 ;
+; Assembler Status      ; Successful - Tue Nov 10 19:32:16 2026 ;
 ; Revision Name         ; Microproyecto2                        ;
 ; Top-level Entity Name ; Microproyecto2                        ;
 ; Family                ; Cyclone III                           ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                     ;
-+-----------------------------------------------------------------------------------------------+
-; File Name                                                                                     ;
-+-----------------------------------------------------------------------------------------------+
-; C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof ;
-+-----------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Generated Files                                               ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; C:/altera/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof ;
++-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/NITRO/Documents/GitHub/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof ;
-+----------------+--------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                ;
-+----------------+--------------------------------------------------------------------------------------------------------+
-; Device         ; EP3C16U484C6                                                                                           ;
-; JTAG usercode  ; 0x000D833B                                                                                             ;
-; Checksum       ; 0x000D833B                                                                                             ;
-+----------------+--------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/altera/Microproyecto2/Microproyecto2/output_files/Microproyecto2.sof ;
++----------------+----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                          ;
++----------------+----------------------------------------------------------------------------------+
+; Device         ; EP3C16U484C6                                                                     ;
+; JTAG usercode  ; 0x000D833B                                                                       ;
+; Checksum       ; 0x000D833B                                                                       ;
++----------------+----------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Nov 08 20:49:52 2026
+    Info: Processing started: Tue Nov 10 19:32:15 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Microproyecto2 -c Microproyecto2
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4592 megabytes
-    Info: Processing ended: Sun Nov 08 20:49:52 2026
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4574 megabytes
+    Info: Processing ended: Tue Nov 10 19:32:16 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
